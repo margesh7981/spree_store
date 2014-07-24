@@ -47,6 +47,15 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
+staging:
+  adapter: mysql
+  database: spree_store_staging
+  username: ordercup_user
+  password: ocu
+  host: localhost
+
+
 production:
   <<: *default
   database: first_spree_store_production
